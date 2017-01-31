@@ -1,0 +1,32 @@
+   text	   data	    bss	    dec	    hex	filename
+   1083	    544	      8	   1635	    663	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1083	    544	      8	   1635	    663	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1083	    548	      4	   1635	    663	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1083	    544	      8	   1635	    663	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1099	    544	      8	   1651	    673	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1083	    548	     12	   1643	    66b	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1083	    544	     16	   1643	    66b	./a.out
+   text	   data	    bss	    dec	    hex	filename
+   1172	    552	      8	   1732	    6c4	./a.out
+
+ Basic Program in specific regions
+
+ Global Variables Uninitialised Program in specific regions
+
+ Global Variables Initialised Program in specific regions
+
+ Local Variables uninitialised Program in specific regions
+
+ Local Variables Initialised Program in specific regions
+
+ Static Variables Initialised Program in specific regions
+
+ Static Variables uninitialised Program in specific regions
+
+ Dynamic Variables uninitialised Program in specific regions
