@@ -1,2 +1,2 @@
 
-The system uses a 64 bit processor
+Big Endian

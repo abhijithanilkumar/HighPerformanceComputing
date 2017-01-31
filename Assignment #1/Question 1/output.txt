@@ -1,0 +1,6 @@
+The machine uses IEEE 754 representation!
+NaN representation : -nan
+Infinity representation : inf
+Epsilon = 4.940656e-324
+Largest positive number = 340282346638528859811704183484516925440.000000
+Smallest positive number = 4.940656e-324
