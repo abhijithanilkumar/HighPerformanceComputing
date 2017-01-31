@@ -1,2 +1,0 @@
-
-The system uses a 64 bit processor
