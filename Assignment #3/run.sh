@@ -3,7 +3,7 @@
 b=1000
 a=0
 
-echo -n "Size\tO0\tO1\tO2\tO3\tO4\tO5\tO6\n" > output.txt
+echo -n "Size\tO1\tO2\tO3\tO4\tO5\tO6\n" > output.txt
 
 while [ "$a" -lt 7 ]
 do
@@ -18,8 +18,13 @@ do
   while [ "$a" -lt 7 ]
   do
     res=`./question_o$a $b`
+    if [ "$a" -eq 0 ]; then
+      time=$res
+    else
+      speedup=`echo "scale=4;$time/$res" | bc`
+      echo -n "$speedup\t" >> output.txt
+    fi
     a=`expr $a + 1`
-    echo -n "$res\t" >> output.txt
   done
   echo "\n" >> output.txt
   b=`expr $b + 1000`
