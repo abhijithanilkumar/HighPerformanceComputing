@@ -1,0 +1,1241 @@
+INSMIX        1.0         0
+#
+# $static-counts
+#
+#     opcode       count-unpredicated    count-predicated
+#
+
+#
+# $rtn-counts rtn[2,_init] at 0x0004003f0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+ 310 JZ                                  1                0
+ 403 MOV                                 1                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+ 787 TEST                                1                0
+3000 *total                              6                0
+3002 *stack-read                         1                0
+3004 *iprel-read                         1                0
+3014 *mem-read-8                         2                0
+#
+#
+# $rtn-counts rtn[3,.plt] at 0x000400410
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                 1                0
+ 639 PUSH                                1                0
+3000 *total                              2                0
+3003 *stack-write                        1                0
+3004 *iprel-read                         2                0
+3005 *iprel-write                        1                0
+3014 *mem-read-8                         2                0
+3534 *mem-write-8                        1                0
+#
+#
+# $rtn-counts rtn[5,__libc_start_main@plt] at 0x000400430
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                 2                0
+ 639 PUSH                                1                0
+3000 *total                              3                0
+3003 *stack-write                        1                0
+3004 *iprel-read                         1                0
+3014 *mem-read-8                         1                0
+3534 *mem-write-8                        1                0
+#
+#
+# $rtn-counts rtn[7,_start] at 0x000400450
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  23 AND                                 1                0
+  67 CALL_NEAR                           1                0
+ 403 MOV                                 5                0
+ 585 POP                                 1                0
+ 639 PUSH                                2                0
+1508 XOR                                 1                0
+3000 *total                             11                0
+3002 *stack-read                         1                0
+3003 *stack-write                        3                0
+3014 *mem-read-8                         1                0
+3534 *mem-write-8                        3                0
+#
+#
+# $rtn-counts rtn[8,deregister_tm_clones] at 0x000400480
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  99 CMP                                 1                0
+ 291 JBE                                 1                0
+ 403 MOV                                 2                0
+ 585 POP                                 1                0
+ 639 PUSH                                1                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+3000 *total                              8                0
+3002 *stack-read                         2                0
+3003 *stack-write                        1                0
+3014 *mem-read-8                         2                0
+3534 *mem-write-8                        1                0
+#
+#
+# $rtn-counts rtn[9,register_tm_clones] at 0x0004004c0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+ 310 JZ                                  1                0
+ 403 MOV                                 3                0
+ 585 POP                                 1                0
+ 639 PUSH                                1                0
+ 696 RET_NEAR                            1                0
+ 710 SAR                                 2                0
+ 748 SHR                                 1                0
+ 773 SUB                                 1                0
+3000 *total                             12                0
+3002 *stack-read                         2                0
+3003 *stack-write                        1                0
+3014 *mem-read-8                         2                0
+3534 *mem-write-8                        1                0
+#
+#
+# $rtn-counts rtn[10,__do_global_dtors_aux] at 0x000400500
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  67 CALL_NEAR                           1                0
+  99 CMP                                 1                0
+ 305 JNZ                                 1                0
+ 403 MOV                                 2                0
+ 585 POP                                 1                0
+ 639 PUSH                                1                0
+ 696 RET_NEAR                            1                0
+3000 *total                              8                0
+3002 *stack-read                         2                0
+3003 *stack-write                        2                0
+3004 *iprel-read                         1                0
+3005 *iprel-write                        1                0
+3007 *mem-read-1                         1                0
+3014 *mem-read-8                         2                0
+3527 *mem-write-1                        1                0
+3534 *mem-write-8                        2                0
+#
+#
+# $rtn-counts rtn[11,frame_dummy] at 0x000400520
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  99 CMP                                 1                0
+ 296 JMP                                 1                0
+ 305 JNZ                                 1                0
+ 403 MOV                                 1                0
+3000 *total                              4                0
+3014 *mem-read-8                         1                0
+#
+#
+# $rtn-counts rtn[12,main] at 0x000400546
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                              1000                0
+  11 ADDSD                            1000                0
+  70 CDQE                             5000                0
+  99 CMP                              1001                0
+ 295 JLE                              1001                0
+ 296 JMP                                 1                0
+ 310 JZ                                  1                0
+ 368 LEAVE                               1                0
+ 403 MOV                              5006                0
+ 432 MOVSD_XMM                        8000                0
+ 449 MULSD                            1000                0
+ 639 PUSH                                1                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+1508 XOR                                 2                0
+3000 *total                          23016                0
+3002 *stack-read                      9004                0
+3003 *stack-write                     4003                0
+3004 *iprel-read                      3000                0
+3010 *mem-read-4                      7001                0
+3014 *mem-read-8                      5005                0
+3530 *mem-write-4                     1001                0
+3534 *mem-write-8                     3002                0
+#
+#
+# $rtn-counts rtn[13,__libc_csu_init] at 0x000400620
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 2                0
+  67 CALL_NEAR                           2                0
+  99 CMP                                 1                0
+ 305 JNZ                                 1                0
+ 310 JZ                                  1                0
+ 367 LEA                                 2                0
+ 403 MOV                                 6                0
+ 455 NOP                                 1                0
+ 585 POP                                 6                0
+ 639 PUSH                                6                0
+ 696 RET_NEAR                            1                0
+ 710 SAR                                 1                0
+ 773 SUB                                 2                0
+ 787 TEST                                1                0
+1508 XOR                                 1                0
+3000 *total                             34                0
+3002 *stack-read                         7                0
+3003 *stack-write                        8                0
+3014 *mem-read-8                         8                0
+3534 *mem-write-8                        8                0
+#
+#
+# $rtn-counts rtn[15,_fini] at 0x000400694
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+3000 *total                              3                0
+3002 *stack-read                         1                0
+3014 *mem-read-8                         1                0
+#
+#
+# $rtn-counts rtn[61,.text] at 0x7effe43588b0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  23 AND                                10                0
+  56 BSR                                 1                0
+  67 CALL_NEAR                           2                0
+  99 CMP                                12                0
+ 116 CPUID                               6                0
+ 117 CQO                                 1                0
+ 265 IDIV                                1                0
+ 295 JLE                                 6                0
+ 296 JMP                                 1                0
+ 305 JNZ                                 7                0
+ 310 JZ                                 12                0
+ 367 LEA                                 8                0
+ 403 MOV                                51                0
+ 442 MOVZX                               2                0
+ 464 NOT                                 1                0
+ 466 OR                                  1                0
+ 585 POP                                 5                0
+ 639 PUSH                                5                0
+ 696 RET_NEAR                            2                0
+ 710 SAR                                 4                0
+ 735 SETZ                                2                0
+ 745 SHL                                 1                0
+ 748 SHR                                 5                0
+ 773 SUB                                 1                0
+ 787 TEST                               14                0
+1508 XOR                                 2                0
+3000 *total                            163                0
+3002 *stack-read                         7                0
+3003 *stack-write                        7                0
+3004 *iprel-read                         2                0
+3005 *iprel-write                        8                0
+3010 *mem-read-4                         4                0
+3014 *mem-read-8                        10                0
+3534 *mem-write-8                       15                0
+#
+#
+# $rtn-counts rtn[1807,_init] at 0x7effe43595a0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 9                0
+  23 AND                                 5                0
+  67 CALL_NEAR                           4                0
+  99 CMP                                 2                0
+ 305 JNZ                                 5                0
+ 310 JZ                                  3                0
+ 367 LEA                                 4                0
+ 403 MOV                                29                0
+ 442 MOVZX                               5                0
+ 585 POP                                 4                0
+ 639 PUSH                                4                0
+ 696 RET_NEAR                            1                0
+ 697 ROL                                 2                0
+ 745 SHL                                 4                0
+ 748 SHR                                 4                0
+ 773 SUB                                 1                0
+ 787 TEST                                6                0
+1508 XOR                                 6                0
+3000 *total                             98                0
+3002 *stack-read                         5                0
+3003 *stack-write                       12                0
+3004 *iprel-read                         4                0
+3005 *iprel-write                        5                0
+3007 *mem-read-1                         4                0
+3008 *mem-read-2                         2                0
+3014 *mem-read-8                        11                0
+3530 *mem-write-4                        4                0
+3534 *mem-write-8                       14                0
+#
+#
+# $rtn-counts rtn[63,__libc_start_main] at 0x7effe4359740
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  23 AND                                 1                0
+  67 CALL_NEAR                           5                0
+ 296 JMP                                 1                0
+ 305 JNZ                                 4                0
+ 310 JZ                                  3                0
+ 367 LEA                                 3                0
+ 403 MOV                                26                0
+ 639 PUSH                                5                0
+ 773 SUB                                 1                0
+ 787 TEST                                6                0
+1508 XOR                                 3                0
+3000 *total                             58                0
+3002 *stack-read                         5                0
+3003 *stack-write                       15                0
+3004 *iprel-read                         5                0
+3010 *mem-read-4                         4                0
+3014 *mem-read-8                        12                0
+3530 *mem-write-4                        2                0
+3534 *mem-write-8                       15                0
+#
+#
+# $rtn-counts rtn[122,__ctype_init] at 0x7effe4367150
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+ 367 LEA                                 2                0
+ 403 MOV                                12                0
+ 696 RET_NEAR                            1                0
+3000 *total                             16                0
+3002 *stack-read                         1                0
+3004 *iprel-read                         4                0
+3014 *mem-read-8                        10                0
+3534 *mem-write-8                        3                0
+#
+#
+# $rtn-counts rtn[160,__sigsetjmp] at 0x7effe436e1b0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                 1                0
+ 310 JZ                                  1                0
+ 367 LEA                                 1                0
+ 403 MOV                                12                0
+ 455 NOP                                 1                0
+ 585 POP                                 1                0
+ 639 PUSH                                1                0
+ 696 RET_NEAR                            1                0
+ 697 ROL                                 3                0
+ 787 TEST                                1                0
+1508 XOR                                 5                0
+3000 *total                             28                0
+3002 *stack-read                         3                0
+3003 *stack-write                        1                0
+3014 *mem-read-8                         6                0
+3530 *mem-write-4                        1                0
+3534 *mem-write-8                        9                0
+#
+#
+# $rtn-counts rtn[162,_setjmp] at 0x7effe436e250
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                 1                0
+1508 XOR                                 1                0
+3000 *total                              2                0
+#
+#
+# $rtn-counts rtn[219,__libc_secure_getenv] at 0x7effe4372ef0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 2                0
+  67 CALL_NEAR                           4                0
+  99 CMP                                 4                0
+ 290 JB                                  1                0
+ 296 JMP                                 1                0
+ 298 JNB                                 1                0
+ 305 JNZ                                 1                0
+ 310 JZ                                  6                0
+ 367 LEA                                 4                0
+ 403 MOV                                16                0
+ 639 PUSH                                4                0
+ 698 ROR                                 1                0
+ 745 SHL                                 3                0
+ 773 SUB                                 2                0
+ 787 TEST                                5                0
+1508 XOR                                 1                0
+3000 *total                             56                0
+3002 *stack-read                         2                0
+3003 *stack-write                        9                0
+3014 *mem-read-8                         9                0
+3534 *mem-write-8                       10                0
+#
+#
+# $rtn-counts rtn[220,exit] at 0x7effe4373030
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  67 CALL_NEAR                           1                0
+ 367 LEA                                 1                0
+ 403 MOV                                 1                0
+ 773 SUB                                 1                0
+3000 *total                              4                0
+3003 *stack-write                        1                0
+3534 *mem-write-8                        1                0
+#
+#
+# $rtn-counts rtn[221,on_exit] at 0x7effe4373050
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 2                0
+  99 CMP                                 2                0
+ 108 CMPXCHG                             1                0
+ 145 DEC                                 1                0
+ 296 JMP                                 1                0
+ 310 JZ                                  7                0
+ 367 LEA                                 1                0
+ 403 MOV                                11                0
+ 455 NOP                                 1                0
+ 585 POP                                 2                0
+ 639 PUSH                                2                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+ 787 TEST                                3                0
+1508 XOR                                 2                0
+3000 *total                             38                0
+3002 *stack-read                         3                0
+3003 *stack-write                        2                0
+3004 *iprel-read                         5                0
+3005 *iprel-write                        3                0
+3010 *mem-read-4                         4                0
+3014 *mem-read-8                         7                0
+3530 *mem-write-4                        2                0
+3534 *mem-write-8                        6                0
+#
+#
+# $rtn-counts rtn[222,__cxa_atexit] at 0x7effe4373280
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  67 CALL_NEAR                           1                0
+ 310 JZ                                  1                0
+ 367 LEA                                 1                0
+ 403 MOV                                 8                0
+ 585 POP                                 3                0
+ 639 PUSH                                3                0
+ 696 RET_NEAR                            1                0
+ 697 ROL                                 1                0
+ 787 TEST                                1                0
+1508 XOR                                 2                0
+3000 *total                             22                0
+3002 *stack-read                         4                0
+3003 *stack-write                        4                0
+3014 *mem-read-8                         5                0
+3534 *mem-write-8                        8                0
+#
+#
+# $rtn-counts rtn[227,__call_tls_dtors] at 0x7effe43735c0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+ 310 JZ                                  1                0
+ 403 MOV                                 2                0
+ 585 POP                                 2                0
+ 639 PUSH                                2                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+ 787 TEST                                1                0
+3000 *total                             11                0
+3002 *stack-read                         4                0
+3003 *stack-write                        2                0
+3004 *iprel-read                         1                0
+3014 *mem-read-8                         5                0
+3534 *mem-write-8                        2                0
+#
+#
+# $rtn-counts rtn[525,_IO_adjust_column] at 0x7effe43b4fe0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 2                0
+  67 CALL_NEAR                           1                0
+  99 CMP                                 6                0
+ 295 JLE                                 3                0
+ 296 JMP                                 4                0
+ 299 JNBE                                3                0
+ 305 JNZ                                11                0
+ 310 JZ                                 14                0
+ 403 MOV                                37                0
+ 585 POP                                10                0
+ 639 PUSH                               10                0
+ 696 RET_NEAR                            2                0
+ 773 SUB                                 2                0
+ 787 TEST                               25                0
+1508 XOR                                 3                0
+3000 *total                            133                0
+3002 *stack-read                        12                0
+3003 *stack-write                       11                0
+3004 *iprel-read                         6                0
+3005 *iprel-write                        6                0
+3007 *mem-read-1                         3                0
+3010 *mem-read-4                         9                0
+3014 *mem-read-8                        28                0
+3530 *mem-write-4                        3                0
+3534 *mem-write-8                       17                0
+#
+#
+# $rtn-counts rtn[589,rindex] at 0x7effe43c5850
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+  23 AND                                 2                0
+  56 BSR                                 1                0
+  99 CMP                                 1                0
+ 299 JNBE                                1                0
+ 310 JZ                                  2                0
+ 367 LEA                                 1                0
+ 403 MOV                                 1                0
+ 407 MOVD                                1                0
+ 410 MOVDQA                              1                0
+ 411 MOVDQU                              1                0
+ 499 PCMPEQB                             2                0
+ 564 PMOVMSKB                            2                0
+ 603 PSHUFD                              1                0
+ 635 PUNPCKLBW                           1                0
+ 638 PUNPCKLWD                           1                0
+ 645 PXOR                                1                0
+ 696 RET_NEAR                            1                0
+ 787 TEST                                1                0
+1508 XOR                                 1                0
+3000 *total                             24                0
+3002 *stack-read                         1                0
+3014 *mem-read-8                         1                0
+3022 *mem-read-16                        1                0
+#
+#
+# $rtn-counts rtn[646,strerror_l] at 0x7effe43d77c0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                55                0
+  23 AND                                20                0
+  67 CALL_NEAR                           4                0
+  99 CMP                               177                0
+ 116 CPUID                               7                0
+ 266 IMUL                               10                0
+ 290 JB                                 10                0
+ 291 JBE                                46                0
+ 296 JMP                                10                0
+ 298 JNB                                54                0
+ 305 JNZ                                75                0
+ 309 JS                                  4                0
+ 310 JZ                                 55                0
+ 367 LEA                                98                0
+ 403 MOV                               132                0
+ 442 MOVZX                              12                0
+ 455 NOP                                13                0
+ 585 POP                                28                0
+ 639 PUSH                               28                0
+ 696 RET_NEAR                            6                0
+ 710 SAR                                 4                0
+ 735 SETZ                               26                0
+ 748 SHR                                71                0
+ 773 SUB                                12                0
+ 787 TEST                               32                0
+1508 XOR                                13                0
+3000 *total                           1002                0
+3002 *stack-read                        34                0
+3003 *stack-write                       42                0
+3004 *iprel-read                         4                0
+3007 *mem-read-1                        54                0
+3010 *mem-read-4                         8                0
+3014 *mem-read-8                        38                0
+3527 *mem-write-1                        4                0
+3530 *mem-write-4                        6                0
+3534 *mem-write-8                       32                0
+#
+#
+# $rtn-counts rtn[799,_Exit] at 0x7effe4404b60
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                 1                0
+ 403 MOV                                 5                0
+ 439 MOVSXD                              1                0
+ 780 SYSCALL                             1                0
+3000 *total                              8                0
+3004 *iprel-read                         1                0
+3014 *mem-read-8                         1                0
+#
+#
+# $rtn-counts rtn[1146,__libc_ifunc_impl_list] at 0x7effe443e690
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 1                0
+  67 CALL_NEAR                           1                0
+  94 CMOVNZ                              1                0
+ 310 JZ                                  2                0
+ 367 LEA                                 1                0
+ 403 MOV                                 9                0
+ 585 POP                                 2                0
+ 639 PUSH                                2                0
+ 696 RET_NEAR                            1                0
+ 773 SUB                                 1                0
+ 787 TEST                                3                0
+3000 *total                             24                0
+3002 *stack-read                         3                0
+3003 *stack-write                        3                0
+3004 *iprel-read                         2                0
+3014 *mem-read-8                         7                0
+3534 *mem-write-8                        5                0
+#
+#
+# $rtn-counts rtn[17,__libc_memalign@plt] at 0x7efff7f46a70
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                18                0
+3000 *total                             18                0
+3004 *iprel-read                        18                0
+3014 *mem-read-8                        18                0
+#
+#
+# $rtn-counts rtn[18,malloc@plt] at 0x7efff7f46a80
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                17                0
+3000 *total                             17                0
+3004 *iprel-read                        17                0
+3014 *mem-read-8                        17                0
+#
+#
+# $rtn-counts rtn[19,calloc@plt] at 0x7efff7f46a90
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                 9                0
+3000 *total                              9                0
+3004 *iprel-read                         9                0
+3014 *mem-read-8                         9                0
+#
+#
+# $rtn-counts rtn[22,.text] at 0x7efff7f46ac0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                               292                0
+  23 AND                                36                0
+  67 CALL_NEAR                          75                0
+  70 CDQE                                1                0
+  84 CMOVBE                              1                0
+  94 CMOVNZ                              3                0
+  98 CMOVZ                               1                0
+  99 CMP                               392                0
+ 266 IMUL                                1                0
+ 268 INC                                 1                0
+ 290 JB                                 13                0
+ 291 JBE                               121                0
+ 295 JLE                                 2                0
+ 296 JMP                                49                0
+ 298 JNB                                32                0
+ 299 JNBE                               41                0
+ 301 JNLE                                1                0
+ 305 JNZ                               155                0
+ 309 JS                                  4                0
+ 310 JZ                                325                0
+ 367 LEA                               207                0
+ 403 MOV                              1139                0
+ 439 MOVSXD                              8                0
+ 442 MOVZX                              32                0
+ 446 MUL                                 1                0
+ 453 NEG                                 9                0
+ 455 NOP                                 5                0
+ 464 NOT                                 1                0
+ 466 OR                                 22                0
+ 585 POP                                47                0
+ 639 PUSH                               50                0
+ 659 RDTSC                               9                0
+ 696 RET_NEAR                           20                0
+ 710 SAR                                 6                0
+ 730 SETNZ                               4                0
+ 735 SETZ                                3                0
+ 745 SHL                                48                0
+ 748 SHR                                20                0
+ 773 SUB                               108                0
+ 780 SYSCALL                             1                0
+ 787 TEST                              296                0
+1508 XOR                                45                0
+3000 *total                           3627                0
+3002 *stack-read                       164                0
+3003 *stack-write                      202                0
+3004 *iprel-read                       121                0
+3005 *iprel-write                       62                0
+3007 *mem-read-1                        63                0
+3008 *mem-read-2                        14                0
+3010 *mem-read-4                       105                0
+3014 *mem-read-8                       605                0
+3527 *mem-write-1                       21                0
+3528 *mem-write-2                        7                0
+3530 *mem-write-4                       39                0
+3534 *mem-write-8                      449                0
+#
+#
+# $rtn-counts rtn[23,_dl_rtld_di_serinfo] at 0x7efff7f4f480
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                              8216                0
+  23 AND                              1150                0
+  58 BT                                 78                0
+  67 CALL_NEAR                         401                0
+  70 CDQE                                2                0
+  94 CMOVNZ                              8                0
+  98 CMOVZ                              79                0
+  99 CMP                              6232                0
+ 147 DIV                                79                0
+ 290 JB                                  6                0
+ 291 JBE                                51                0
+ 295 JLE                                80                0
+ 296 JMP                               580                0
+ 298 JNB                                86                0
+ 299 JNBE                             1465                0
+ 304 JNS                                 3                0
+ 305 JNZ                              3911                0
+ 309 JS                                  1                0
+ 310 JZ                               4651                0
+ 367 LEA                              1514                0
+ 403 MOV                             20994                0
+ 439 MOVSXD                             97                0
+ 442 MOVZX                            2121                0
+ 453 NEG                                 7                0
+ 455 NOP                               262                0
+ 464 NOT                                 3                0
+ 466 OR                                163                0
+ 585 POP                              1519                0
+ 639 PUSH                             2389                0
+ 696 RET_NEAR                          261                0
+ 710 SAR                                81                0
+ 713 SBB                                 3                0
+ 719 SETB                                3                0
+ 720 SETBE                              71                0
+ 730 SETNZ                               5                0
+ 735 SETZ                              225                0
+ 745 SHL                              1206                0
+ 748 SHR                              1001                0
+ 770 STOSQ                              24                0
+ 773 SUB                               474                0
+ 787 TEST                             4093                0
+1508 XOR                               588                0
+3000 *total                          64183                0
+3002 *stack-read                      6565                0
+3003 *stack-write                     5825                0
+3004 *iprel-read                       382                0
+3005 *iprel-write                       98                0
+3007 *mem-read-1                      2231                0
+3008 *mem-read-2                       257                0
+3010 *mem-read-4                      3506                0
+3014 *mem-read-8                     11172                0
+3527 *mem-write-1                       27                0
+3528 *mem-write-2                        7                0
+3530 *mem-write-4                      563                0
+3534 *mem-write-8                     7363                0
+#
+#
+# $rtn-counts rtn[24,_dl_debug_state] at 0x7efff7f56e90
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                               164                0
+  23 AND                                77                0
+  67 CALL_NEAR                          72                0
+  83 CMOVB                              36                0
+  98 CMOVZ                               2                0
+  99 CMP                                89                0
+ 291 JBE                                 4                0
+ 296 JMP                                12                0
+ 305 JNZ                               190                0
+ 309 JS                                  2                0
+ 310 JZ                                140                0
+ 367 LEA                                87                0
+ 403 MOV                               775                0
+ 442 MOVZX                              93                0
+ 455 NOP                                 4                0
+ 466 OR                                  8                0
+ 585 POP                               106                0
+ 639 PUSH                              102                0
+ 696 RET_NEAR                           36                0
+ 730 SETNZ                               4                0
+ 745 SHL                                 3                0
+ 773 SUB                                35                0
+ 787 TEST                              289                0
+1508 XOR                                34                0
+3000 *total                           2364                0
+3002 *stack-read                       179                0
+3003 *stack-write                      204                0
+3004 *iprel-read                         9                0
+3007 *mem-read-1                        44                0
+3008 *mem-read-2                        93                0
+3010 *mem-read-4                       235                0
+3014 *mem-read-8                       360                0
+3530 *mem-write-4                       54                0
+3534 *mem-write-8                      270                0
+#
+#
+# $rtn-counts rtn[25,_dl_mcount] at 0x7efff7f58950
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 7                0
+  23 AND                                 1                0
+  83 CMOVB                               1                0
+  99 CMP                                 6                0
+ 147 DIV                                 2                0
+ 266 IMUL                                2                0
+ 291 JBE                                 1                0
+ 296 JMP                                 1                0
+ 298 JNB                                 1                0
+ 305 JNZ                                 4                0
+ 310 JZ                                  3                0
+ 367 LEA                                 6                0
+ 403 MOV                                18                0
+ 453 NEG                                 1                0
+ 585 POP                                 6                0
+ 639 PUSH                                6                0
+ 696 RET_NEAR                            3                0
+ 773 SUB                                 4                0
+ 787 TEST                                4                0
+1508 XOR                                 6                0
+3000 *total                             83                0
+3002 *stack-read                         9                0
+3003 *stack-write                        6                0
+3004 *iprel-read                         5                0
+3005 *iprel-write                        4                0
+3007 *mem-read-1                         2                0
+3014 *mem-read-8                        19                0
+3534 *mem-write-8                       11                0
+#
+#
+# $rtn-counts rtn[27,_dl_get_tls_static_info] at 0x7efff7f59370
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 3                0
+  23 AND                                 1                0
+  67 CALL_NEAR                           2                0
+ 310 JZ                                  2                0
+ 367 LEA                                 3                0
+ 403 MOV                                12                0
+ 585 POP                                 3                0
+ 639 PUSH                                3                0
+ 696 RET_NEAR                            1                0
+ 748 SHR                                 1                0
+ 770 STOSQ                             287                0
+ 773 SUB                                 1                0
+ 787 TEST                                2                0
+1508 XOR                                 1                0
+3000 *total                            322                0
+3002 *stack-read                         4                0
+3003 *stack-write                        5                0
+3004 *iprel-read                         3                0
+3014 *mem-read-8                         7                0
+3534 *mem-write-8                      296                0
+#
+#
+# $rtn-counts rtn[28,_dl_allocate_tls_init] at 0x7efff7f59440
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 5                0
+  67 CALL_NEAR                           2                0
+  83 CMOVB                               1                0
+  99 CMP                                11                0
+ 290 JB                                  4                0
+ 291 JBE                                 1                0
+ 296 JMP                                 1                0
+ 298 JNB                                 1                0
+ 299 JNBE                                3                0
+ 305 JNZ                                 1                0
+ 310 JZ                                  2                0
+ 367 LEA                                 4                0
+ 403 MOV                                31                0
+ 455 NOP                                 1                0
+ 585 POP                                 6                0
+ 639 PUSH                                6                0
+ 696 RET_NEAR                            1                0
+ 735 SETZ                                1                0
+ 745 SHL                                 2                0
+ 773 SUB                                 4                0
+ 787 TEST                                3                0
+1508 XOR                                 3                0
+3000 *total                             94                0
+3002 *stack-read                        15                0
+3003 *stack-write                       12                0
+3004 *iprel-read                         4                0
+3014 *mem-read-8                        28                0
+3527 *mem-write-1                        1                0
+3534 *mem-write-8                       14                0
+#
+#
+# $rtn-counts rtn[31,__tls_get_addr] at 0x7efff7f59ae0
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                 2                0
+  99 CMP                                 1                0
+ 296 JMP                                 1                0
+ 298 JNB                                 1                0
+ 403 MOV                                 7                0
+ 585 POP                                 3                0
+ 639 PUSH                                3                0
+ 696 RET_NEAR                            1                0
+ 745 SHL                                 1                0
+3000 *total                             20                0
+3002 *stack-read                         5                0
+3003 *stack-write                        3                0
+3004 *iprel-read                         2                0
+3014 *mem-read-8                         8                0
+3534 *mem-write-8                        5                0
+#
+#
+# $rtn-counts rtn[33,_dl_find_dso_for_object] at 0x7efff7f5aa20
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                               125                0
+  23 AND                                 5                0
+  67 CALL_NEAR                          20                0
+  99 CMP                               214                0
+ 290 JB                                  1                0
+ 291 JBE                                70                0
+ 294 JL                                  3                0
+ 295 JLE                                 3                0
+ 296 JMP                                 2                0
+ 299 JNBE                               67                0
+ 300 JNL                                 5                0
+ 301 JNLE                                1                0
+ 304 JNS                                 8                0
+ 305 JNZ                               112                0
+ 309 JS                                  1                0
+ 310 JZ                                 34                0
+ 367 LEA                               171                0
+ 403 MOV                               118                0
+ 438 MOVSX                             124                0
+ 439 MOVSXD                             13                0
+ 453 NEG                                 2                0
+ 455 NOP                                20                0
+ 464 NOT                                 1                0
+ 466 OR                                  1                0
+ 585 POP                                 6                0
+ 639 PUSH                                7                0
+ 696 RET_NEAR                           13                0
+ 710 SAR                                 9                0
+ 748 SHR                                 8                0
+ 773 SUB                                18                0
+ 787 TEST                               82                0
+1063 VMOVDQA                            16                0
+1508 XOR                                 2                0
+3000 *total                           1282                0
+3002 *stack-read                        65                0
+3003 *stack-write                       61                0
+3004 *iprel-read                        11                0
+3005 *iprel-write                        3                0
+3007 *mem-read-1                       124                0
+3010 *mem-read-4                        44                0
+3014 *mem-read-8                        42                0
+3038 *mem-read-32                        8                0
+3530 *mem-write-4                       14                0
+3534 *mem-write-8                       42                0
+3558 *mem-write-32                       8                0
+#
+#
+# $rtn-counts rtn[34,__get_cpu_features] at 0x7efff7f5f030
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                               178                0
+  23 AND                                10                0
+  67 CALL_NEAR                           5                0
+  70 CDQE                                1                0
+  99 CMP                               182                0
+ 116 CPUID                               3                0
+ 291 JBE                                 1                0
+ 295 JLE                                 1                0
+ 296 JMP                                33                0
+ 299 JNBE                               20                0
+ 305 JNZ                               168                0
+ 310 JZ                                 96                0
+ 367 LEA                                 9                0
+ 403 MOV                               191                0
+ 439 MOVSXD                             19                0
+ 442 MOVZX                               2                0
+ 455 NOP                                 2                0
+ 466 OR                                  6                0
+ 585 POP                                12                0
+ 639 PUSH                               12                0
+ 696 RET_NEAR                            4                0
+ 735 SETZ                                3                0
+ 748 SHR                                 3                0
+ 773 SUB                                20                0
+ 787 TEST                              105                0
+1506 XGETBV                              1                0
+1508 XOR                                15                0
+3000 *total                           1102                0
+3002 *stack-read                        33                0
+3003 *stack-write                       38                0
+3004 *iprel-read                        25                0
+3005 *iprel-write                       33                0
+3007 *mem-read-1                        80                0
+3008 *mem-read-2                         2                0
+3010 *mem-read-4                        41                0
+3014 *mem-read-8                       196                0
+3527 *mem-write-1                        8                0
+3528 *mem-write-2                        1                0
+3530 *mem-write-4                       24                0
+3534 *mem-write-8                       38                0
+#
+#
+# $rtn-counts rtn[35,__libc_memalign] at 0x7efff7f5fc30
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                26                0
+  23 AND                                23                0
+  67 CALL_NEAR                           4                0
+  98 CMOVZ                               4                0
+  99 CMP                                40                0
+ 290 JB                                 14                0
+ 296 JMP                                 1                0
+ 298 JNB                                18                0
+ 310 JZ                                 26                0
+ 367 LEA                                42                0
+ 403 MOV                               159                0
+ 453 NEG                                37                0
+ 585 POP                                36                0
+ 639 PUSH                               36                0
+ 696 RET_NEAR                           18                0
+ 773 SUB                                18                0
+ 787 TEST                               18                0
+1508 XOR                                 8                0
+3000 *total                            528                0
+3002 *stack-read                        54                0
+3003 *stack-write                       40                0
+3004 *iprel-read                        48                0
+3005 *iprel-write                       59                0
+3014 *mem-read-8                       102                0
+3534 *mem-write-8                       99                0
+#
+#
+# $rtn-counts rtn[36,malloc] at 0x7efff7f5fd30
+#
+#     opcode       count-unpredicated    count-predicated
+#
+ 296 JMP                                17                0
+ 403 MOV                                34                0
+3000 *total                             51                0
+#
+#
+# $rtn-counts rtn[37,calloc] at 0x7efff7f5fd40
+#
+#     opcode       count-unpredicated    count-predicated
+#
+  99 CMP                                 9                0
+ 266 IMUL                                9                0
+ 291 JBE                                 9                0
+ 296 JMP                                 9                0
+ 403 MOV                                27                0
+ 466 OR                                  9                0
+3000 *total                             72                0
+#
+#
+# $rtn-counts rtn[39,realloc] at 0x7efff7f5ff30
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                                74                0
+  23 AND                               471                0
+  55 BSF                               158                0
+  67 CALL_NEAR                           2                0
+  94 CMOVNZ                              3                0
+  99 CMP                               436                0
+ 145 DEC                                 2                0
+ 268 INC                                15                0
+ 291 JBE                                 9                0
+ 295 JLE                                 8                0
+ 296 JMP                                35                0
+ 298 JNB                                28                0
+ 299 JNBE                              329                0
+ 300 JNL                                 8                0
+ 301 JNLE                                9                0
+ 305 JNZ                               222                0
+ 310 JZ                                237                0
+ 367 LEA                               214                0
+ 403 MOV                               660                0
+ 407 MOVD                               14                0
+ 410 MOVDQA                            240                0
+ 411 MOVDQU                             39                0
+ 413 MOVHPD                            226                0
+ 416 MOVLPD                            226                0
+ 428 MOVQ                                9                0
+ 439 MOVSXD                             59                0
+ 442 MOVZX                             312                0
+ 453 NEG                                 3                0
+ 455 NOP                                79                0
+ 466 OR                                 11                0
+ 499 PCMPEQB                           340                0
+ 564 PMOVMSKB                          181                0
+ 585 POP                                52                0
+ 592 POR                                12                0
+ 603 PSHUFD                             14                0
+ 611 PSLLDQ                             39                0
+ 617 PSRLDQ                              6                0
+ 620 PSUBB                             153                0
+ 635 PUNPCKLBW                          14                0
+ 638 PUNPCKLWD                          14                0
+ 639 PUSH                               52                0
+ 645 PXOR                              192                0
+ 696 RET_NEAR                          217                0
+ 697 ROL                                 6                0
+ 710 SAR                                 6                0
+ 745 SHL                                13                0
+ 748 SHR                                71                0
+ 773 SUB                               372                0
+ 780 SYSCALL                            24                0
+ 787 TEST                              176                0
+1504 XCHG                               87                0
+1508 XOR                                56                0
+3000 *total                           6235                0
+3002 *stack-read                       273                0
+3003 *stack-write                       56                0
+3004 *iprel-read                         9                0
+3005 *iprel-write                        1                0
+3007 *mem-read-1                       307                0
+3008 *mem-read-2                         7                0
+3010 *mem-read-4                        42                0
+3014 *mem-read-8                       761                0
+3022 *mem-read-16                      118                0
+3527 *mem-write-1                        9                0
+3528 *mem-write-2                        5                0
+3530 *mem-write-4                        9                0
+3534 *mem-write-8                      106                0
+3542 *mem-write-16                     160                0
+#
+#
+# $dynamic-counts
+#
+#     opcode       count-unpredicated    count-predicated
+#
+   8 ADD                             10197                0
+  11 ADDSD                            1000                0
+  23 AND                              1824                0
+  55 BSF                               158                0
+  56 BSR                                 2                0
+  58 BT                                 78                0
+  67 CALL_NEAR                         616                0
+  70 CDQE                             5004                0
+  83 CMOVB                              38                0
+  84 CMOVBE                              1                0
+  94 CMOVNZ                             15                0
+  98 CMOVZ                              88                0
+  99 CMP                              8824                0
+ 108 CMPXCHG                             1                0
+ 116 CPUID                              16                0
+ 117 CQO                                 1                0
+ 145 DEC                                 3                0
+ 147 DIV                                81                0
+ 265 IDIV                                1                0
+ 266 IMUL                               22                0
+ 268 INC                                16                0
+ 290 JB                                 49                0
+ 291 JBE                               314                0
+ 294 JL                                  3                0
+ 295 JLE                              1104                0
+ 296 JMP                               811                0
+ 298 JNB                               222                0
+ 299 JNBE                             1929                0
+ 300 JNL                                13                0
+ 301 JNLE                               11                0
+ 304 JNS                                11                0
+ 305 JNZ                              4882                0
+ 309 JS                                 12                0
+ 310 JZ                               5643                0
+ 367 LEA                              2414                0
+ 368 LEAVE                               1                0
+ 403 MOV                             29617                0
+ 407 MOVD                               15                0
+ 410 MOVDQA                            241                0
+ 411 MOVDQU                             40                0
+ 413 MOVHPD                            226                0
+ 416 MOVLPD                            226                0
+ 428 MOVQ                                9                0
+ 432 MOVSD_XMM                        8000                0
+ 438 MOVSX                             124                0
+ 439 MOVSXD                            197                0
+ 442 MOVZX                            2587                0
+ 446 MUL                                 1                0
+ 449 MULSD                            1000                0
+ 453 NEG                                59                0
+ 455 NOP                               389                0
+ 464 NOT                                 6                0
+ 466 OR                                221                0
+ 499 PCMPEQB                           342                0
+ 564 PMOVMSKB                          183                0
+ 585 POP                              1871                0
+ 592 POR                                12                0
+ 603 PSHUFD                             15                0
+ 611 PSLLDQ                             39                0
+ 617 PSRLDQ                              6                0
+ 620 PSUBB                             153                0
+ 635 PUNPCKLBW                          15                0
+ 638 PUNPCKLWD                          15                0
+ 639 PUSH                             2754                0
+ 645 PXOR                              193                0
+ 659 RDTSC                               9                0
+ 696 RET_NEAR                          612                0
+ 697 ROL                                12                0
+ 698 ROR                                 1                0
+ 710 SAR                               113                0
+ 713 SBB                                 3                0
+ 719 SETB                                3                0
+ 720 SETBE                              71                0
+ 730 SETNZ                              13                0
+ 735 SETZ                              260                0
+ 745 SHL                              1289                0
+ 748 SHR                              1193                0
+ 770 STOSQ                             311                0
+ 773 SUB                              1090                0
+ 780 SYSCALL                            26                0
+ 787 TEST                             5196                0
+1063 VMOVDQA                            16                0
+1504 XCHG                               87                0
+1506 XGETBV                              1                0
+1508 XOR                               813                0
+3000 *total                         105080                0
+3002 *stack-read                     16494                0
+3003 *stack-write                    10623                0
+3004 *iprel-read                      3712                0
+3005 *iprel-write                      284                0
+3007 *mem-read-1                      2921                0
+3008 *mem-read-2                       375                0
+3010 *mem-read-4                     11009                0
+3014 *mem-read-8                     18571                0
+3022 *mem-read-16                      119                0
+3038 *mem-read-32                        8                0
+3527 *mem-write-1                       75                0
+3528 *mem-write-2                       20                0
+3530 *mem-write-4                     1726                0
+3534 *mem-write-8                    11883                0
+3542 *mem-write-16                     160                0
+3558 *mem-write-32                       8                0
+# $eof
