@@ -1,0 +1,27 @@
+==18392== Cachegrind, a cache and branch-prediction profiler
+==18392== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==18392== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==18392== Command: ./eigen-2
+==18392==
+--18392-- warning: L3 cache found, using its data for the LL simulation.
+Eigen Value = 149.556
+==18392==
+==18392== I   refs:      11,718,532
+==18392== I1  misses:         1,876
+==18392== LLi misses:         1,748
+==18392== I1  miss rate:       0.02%
+==18392== LLi miss rate:       0.01%
+==18392==
+==18392== D   refs:       5,321,345  (4,443,177 rd   + 878,168 wr)
+==18392== D1  misses:        62,324  (   48,205 rd   +  14,119 wr)
+==18392== LLd misses:        20,558  (    7,820 rd   +  12,738 wr)
+==18392== D1  miss rate:        1.2% (      1.1%     +     1.6%  )
+==18392== LLd miss rate:        0.4% (      0.2%     +     1.5%  )
+==18392==
+==18392== LL refs:           64,200  (   50,081 rd   +  14,119 wr)
+==18392== LL misses:         22,306  (    9,568 rd   +  12,738 wr)
+==18392== LL miss rate:         0.1% (      0.1%     +     1.5%  )
+==18392==
+==18392== Branches:       1,049,856  (  999,235 cond +  50,621 ind)
+==18392== Mispredicts:       17,489  (   16,851 cond +     638 ind)
+==18392== Mispred rate:         1.7% (      1.7%     +     1.3%   )
